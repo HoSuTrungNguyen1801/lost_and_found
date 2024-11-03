@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+ .swiper-button-prev {
+    display: none !important;
+ }
+
+ .swiper-button-prev:after, .swiper-button-next:after{
+    font-size: 16px !important;
+ }
+
+
+.html{
+   scroll-behavior: smooth;
+}
+
+footer {
+   background-color: #333;
+   color: #fff;
+   padding: 20px 0;
+   text-align: center;
+ }
+ /* Định dạng Navbar */
+.navbar {
+   background-color: #333;
+   color: white;
+   padding: 10px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+ }
+  /* Định dạng loading */
+  .loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Màu nền tối với độ trong suốt */
+    z-index: 1000; /* Đảm bảo nó nằm trên các phần khác */
+  }
+  
+  .loader {
+    border: 8px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top: 8px solid #ffffff; /* Màu sắc của phần trên */
+    width: 60px; /* Kích thước vòng tròn */
+    height: 60px;
+    animation: spin 1s linear infinite; /* Hiệu ứng xoay */
+    margin-bottom: 10px; /* Khoảng cách giữa loader và text */
+  }
+  
+  .loading-text {
+    color: #ffffff; /* Màu chữ */
+    font-size: 18px; /* Kích thước chữ */
+    font-weight: bold; /* Đậm chữ */
+    text-align: center; /* Căn giữa chữ */
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+ /* Định dạng nội dung chính */
+ .main-content {
+   display: flex;
+   justify-content: center; /* Để căn giữa phần nội dung chính */
+   margin-top: 20px; /* Khoảng cách trên */
+ }
+ 
+ /* Định dạng sidebar */
+ .sidebar {
+   width: 20%; /* Chiều rộng cho sidebar */
+   background-color: #f0f0f0;
+   padding: 10px;
+ }
+ 
+ /* Định dạng nội dung chính */
+ .content {
+   width: 60%; /* Chiều rộng cho nội dung chính */
+   padding: 10px;
+ }
+ 
+ /* Định dạng danh sách bài viết */
+ .post-list {
+   display: flex;
+   flex-direction: column; /* Hiển thị các bài viết theo chiều dọc */
+ }
